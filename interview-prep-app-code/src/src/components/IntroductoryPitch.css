@@ -1,0 +1,199 @@
+.introductory-pitch {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.introductory-pitch-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.introductory-pitch-header h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.introductory-pitch-header p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.pitch-input-section {
+  margin-bottom: 2rem;
+}
+
+.pitch-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.pitch-textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.pitch-textarea:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.validation-error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fdecea;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+.submit-pitch-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 1rem;
+}
+
+.submit-pitch-button:hover:not(:disabled) {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+.submit-pitch-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submit-pitch-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  border: 4px solid #e0e0e0;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pitch-analysis-results {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pitch-analysis-results h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.analysis-section {
+  margin-bottom: 1.5rem;
+}
+
+.analysis-section:last-child {
+  margin-bottom: 0;
+}
+
+.analysis-section h4 {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.analysis-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.analysis-section li {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-left: 3px solid #3498db;
+  border-radius: 4px;
+  color: #2c3e50;
+}
+
+.analysis-section li:last-child {
+  margin-bottom: 0;
+}
+
+/* Accessibility - Visually hidden but screen reader accessible */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .introductory-pitch {
+    padding: 1rem;
+  }
+
+  .introductory-pitch-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .pitch-textarea {
+    font-size: 0.95rem;
+  }
+
+  .submit-pitch-button {
+    font-size: 0.95rem;
+  }
+}

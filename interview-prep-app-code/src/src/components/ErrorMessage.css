@@ -1,0 +1,79 @@
+.error-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-message-error {
+  background-color: #fff5f5;
+  border: 1px solid #fc8181;
+  color: #c53030;
+}
+
+.error-message-warning {
+  background-color: #fffaf0;
+  border: 1px solid #f6ad55;
+  color: #c05621;
+}
+
+.error-message-info {
+  background-color: #ebf8ff;
+  border: 1px solid #63b3ed;
+  color: #2c5282;
+}
+
+.error-message-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.error-message-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.error-message-text {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.error-message-dismiss {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 1rem;
+  color: inherit;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.error-message-dismiss:hover {
+  opacity: 1;
+}
+
+.error-message-dismiss:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}

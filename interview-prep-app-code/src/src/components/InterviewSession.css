@@ -1,0 +1,15 @@
+.interview-session {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .interview-session {
+    padding: 16px;
+    gap: 20px;
+  }
+}
